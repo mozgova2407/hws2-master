@@ -8,23 +8,23 @@ import avatar from './avatar.png'
 /*
 * 1 - описать тип MessageType - done
 * 2 - описать тип MessagePropsType в файле Message.tsx - done
-* 3 - в файле Message.tsx отобразить приходящие данные - done
-* 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx - done
-* 5 - сделать стили в соответствии с дизайном
+* 3 - в файле Message.tsx отобразить приходящие данные - - done
+* 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx  - done
+* 5 - сделать стили в соответствии с дизайном  - done
 * */
 
 // нужно создать правильный тип вместо any
 export type MessageType = {
-    id: number,
+    id: number;
     user: {
-        avatar: string// можно менять
-        name: string // можно менять
-    },
+        avatar: string;
+        name: string;
+    };
     message: {
-        text: string // можно менять
-        time: string // можно менять
-    },
-}
+        text: string;
+        time: string;
+    };
+};
 
 // структуру объекта не менять
 export const message0: MessageType = {

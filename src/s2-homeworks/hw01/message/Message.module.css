@@ -47,7 +47,7 @@
 .messageText {
     font-size: 14px;
     color: #444;
-    white-space: pre-wrap;
+    white-space: normal;
     word-wrap: break-word;
 }
 

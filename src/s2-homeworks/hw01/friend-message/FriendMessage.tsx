@@ -1,13 +1,9 @@
 import React from 'react'
 import s from './FriendMessage.module.css'
-import {MessageType} from "../HW1";
-import message from "../message/Message";
+import {MessagePropsType} from "../message/Message";
 
 // создать тип вместо any и отобразить приходящие данные
-export type FriendMessagePropsType = {
-    message: MessageType
-}
-const FriendMessage = (props: FriendMessagePropsType) => {
+const FriendMessage = (props:MessagePropsType) => {
     return (
         <div
             id={'hw1-friend-message-' + props.message.id}
@@ -16,22 +12,26 @@ const FriendMessage = (props: FriendMessagePropsType) => {
             <div className={s.friendImageAndText}>
                 <img
                     id={'hw1-friend-avatar-' + props.message.id}
-                    src={props.message.user.avatar}
-                    alt="friend-avatar"
-                    className={s.friendAvatar} // создаёт студент
+                    src={props.message.user.avatar}// создаёт студент
+
+                    //
                 />
                 <div className={s.friendText}>
                     <div
                         id={'hw1-friend-name-' + props.message.id}
                         className={s.friendName}
                     >
-                        {props.message.user.name}{/*создаёт студент*/}
+                        {props.message.user.name} {/*создаёт студент*/}
+
+                        {/**/}
                     </div>
                     <pre
                         id={'hw1-friend-text-' + props.message.id}
                         className={s.friendMessageText}
                     >
                         {props.message.message.text} {/*создаёт студент*/}
+
+                        {/**/}
                     </pre>
                 </div>
             </div>
@@ -39,7 +39,9 @@ const FriendMessage = (props: FriendMessagePropsType) => {
                 id={'hw1-friend-time-' + props.message.id}
                 className={s.friendTime}
             >
-                {props.message.message.time} {/*создаёт студент*/}
+                {props.message.message.time}{/*создаёт студент*/}
+
+                {/**/}
             </div>
         </div>
     )
