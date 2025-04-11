@@ -1,59 +1,82 @@
-/*.message {*/
-/*    display: flex;*/
-/*    align-items: flex-start;*/
-/*    margin: 10px 0;*/
-/*}*/
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* padding-right: 70px; */
 
-/*.imageAndText {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
+}
 
-/*.imageAndText img {*/
-/*    width: 50px;*/
-/*    height: 50px;*/
-/*    border-radius: 50%;*/
-/*    object-fit: cover;*/
-/*    border: 2px solid #ccc;*/
-/*    margin-right: 10px;*/
-/*}*/
+.imageAndText {
+    max-width: 45%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 15px;
+}
 
-/*.text {*/
-/*    background-color: #d1e7ff; !* Светло-голубой фон *!*/
-/*    padding: 10px 15px;*/
-/*    border-radius: 10px;*/
-/*    max-width: 60%;*/
-/*    position: relative;*/
-/*}*/
+.imageAndText img {
+    height: 45px;
+}
 
-/*.text:after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 10px;*/
-/*    left: -10px;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    border-right: 10px solid #d1e7ff;*/
-/*    border-top: 5px solid transparent;*/
-/*    border-bottom: 5px solid transparent;*/
-/*}*/
 
-/*.name {*/
-/*    font-weight: bold;*/
-/*    color: #333;*/
-/*    margin-bottom: 5px;*/
-/*}*/
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #0066CC;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: #fff;
+    max-width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+}
 
-/*.messageText {*/
-/*    font-size: 14px;*/
-/*    color: #444;*/
-/*    white-space: normal;*/
-/*    word-wrap: break-word;*/
-/*}*/
 
-/*.time {*/
-/*    font-size: 12px;*/
-/*    color: gray;*/
-/*    align-self: flex-end;*/
-/*    margin-left: 10px;*/
-/*}*/
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+
+.messageText {
+    position: relative;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    color: rgba(255, 255, 255, 1);
+}
+
+.messageText::after {
+    content: '';
+    position: absolute;
+    border-top: 30px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 25px solid rgba(0, 102, 204, 1);
+    border-left: 15px solid transparent;
+    bottom: -8px;
+    right: -31px;
+}
+
+.time {
+    font-size: 10px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 5px;
+    display: inline-block;
+    padding: 0 9px;
+}
