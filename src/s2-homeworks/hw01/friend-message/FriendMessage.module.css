@@ -1,61 +1,61 @@
-.friendMessage {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    margin: 10px 0;
-}
+/*.friendMessage {*/
+/*    display: flex;*/
+/*    flex-direction: row-reverse;*/
+/*    align-items: flex-start;*/
+/*    margin: 10px 0;*/
+/*}*/
 
-.friendImageAndText {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
+/*.friendImageAndText {*/
+/*    display: flex;*/
+/*    flex-direction: row-reverse;*/
+/*    align-items: center;*/
+/*}*/
 
-.friendImageAndText img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ccc;
-    margin-left: 10px;
-}
+/*.friendImageAndText img {*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    border-radius: 50%;*/
+/*    object-fit: cover;*/
+/*    border: 2px solid #ccc;*/
+/*    margin-left: 10px;*/
+/*}*/
 
-.friendText {
-    text-align: right; /* Выравнивание текста вправо */
-    background-color: #e0e0e0; /* Светлый фон */
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 60%;
-}
+/*.friendText {*/
+/*    text-align: right; !* Выравнивание текста вправо *!*/
+/*    background-color: #e0e0e0; !* Светлый фон *!*/
+/*    padding: 10px;*/
+/*    border-radius: 10px;*/
+/*    max-width: 60%;*/
+/*}*/
 
-.friendText:after {
-    content: '';
-    position: absolute;
-    top: 10px;
-    right: -10px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid #e0e0e0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-}
+/*.friendText:after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    right: -10px;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-left: 10px solid #e0e0e0;*/
+/*    border-top: 5px solid transparent;*/
+/*    border-bottom: 5px solid transparent;*/
+/*}*/
 
-.friendName {
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-}
+/*.friendName {*/
+/*    font-weight: bold;*/
+/*    color: #333;*/
+/*    margin-bottom: 5px;*/
+/*}*/
 
-.friendMessageText {
-    font-size: 14px;
-    color: #444;
-    white-space: normal;
-    word-wrap: break-word;
-}
+/*.friendMessageText {*/
+/*    font-size: 14px;*/
+/*    color: #444;*/
+/*    white-space: normal;*/
+/*    word-wrap: break-word;*/
+/*}*/
 
-.friendTime {
-    font-size: 12px;
-    color: gray;
-    align-self: flex-end;
-    margin-right: 10px;
-}
+/*.friendTime {*/
+/*    font-size: 12px;*/
+/*    color: gray;*/
+/*    align-self: flex-end;*/
+/*    margin-right: 10px;*/
+/*}*/

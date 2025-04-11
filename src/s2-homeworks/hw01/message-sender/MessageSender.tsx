@@ -10,7 +10,7 @@ const MessageSender = (props: any) => {
     const [text, setText] = useState<any>('')
 
     const onChange = (e: any) => {
-        setText(e.currentTarget.value)
+        setText(e.currentTarget.value.trim())
     }
 
     useEffect(() => {

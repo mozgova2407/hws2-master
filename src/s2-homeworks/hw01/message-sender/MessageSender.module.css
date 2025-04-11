@@ -1,42 +1,42 @@
-.sendForm {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 15px;
-    padding: 10px;
-    background: #f5f5f5;
-    border-radius: 10px;
-}
+/*.sendForm {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    gap: 10px;*/
+/*    margin-top: 15px;*/
+/*    padding: 10px;*/
+/*    background: #f5f5f5;*/
+/*    border-radius: 10px;*/
+/*}*/
 
-.textarea {
-    flex: 1;
-    min-height: 40px;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    resize: none; /* Отключаем изменение размера */
-    font-size: 14px;
-    outline: none;
-    transition: border 0.3s ease-in-out;
-}
+/*.textarea {*/
+/*    flex: 1;*/
+/*    min-height: 40px;*/
+/*    padding: 10px;*/
+/*    border: 2px solid #ccc;*/
+/*    border-radius: 8px;*/
+/*    resize: none; !* Отключаем изменение размера *!*/
+/*    font-size: 14px;*/
+/*    outline: none;*/
+/*    transition: border 0.3s ease-in-out;*/
+/*}*/
 
-.button {
-    padding: 10px 20px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: background 0.3s ease-in-out, transform 0.1s;
-}
+/*.button {*/
+/*    padding: 10px 20px;*/
+/*    background: #007bff;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    border-radius: 8px;*/
+/*    cursor: pointer;*/
+/*    font-size: 14px;*/
+/*    font-weight: bold;*/
+/*    transition: background 0.3s ease-in-out, transform 0.1s;*/
+/*}*/
 
-.button:hover {
-    background: #0056b3;
-}
-.button:active {
-    background: #004099;
-    transform: scale(0.95);
-}
+/*.button:hover {*/
+/*    background: #0056b3;*/
+/*}*/
+/*.button:active {*/
+/*    background: #004099;*/
+/*    transform: scale(0.95);*/
+/*}*/
