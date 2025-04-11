@@ -13,8 +13,6 @@ const FriendMessage = (props:MessagePropsType) => {
                 <img
                     id={'hw1-friend-avatar-' + props.message.id}
                     src={props.message.user.avatar}// создаёт студент
-
-                    //
                 />
                 <div className={s.friendText}>
                     <div
@@ -22,16 +20,12 @@ const FriendMessage = (props:MessagePropsType) => {
                         className={s.friendName}
                     >
                         {props.message.user.name} {/*создаёт студент*/}
-
-                        {/**/}
                     </div>
                     <pre
                         id={'hw1-friend-text-' + props.message.id}
                         className={s.friendMessageText}
                     >
                         {props.message.message.text} {/*создаёт студент*/}
-
-                        {/**/}
                     </pre>
                 </div>
             </div>
@@ -40,8 +34,6 @@ const FriendMessage = (props:MessagePropsType) => {
                 className={s.friendTime}
             >
                 {props.message.message.time}{/*создаёт студент*/}
-
-                {/**/}
             </div>
         </div>
     )
