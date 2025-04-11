@@ -4,7 +4,7 @@ import {MessageType} from "../HW1";
 
 // нужно создать правильный тип вместо any
 export type MessagePropsType = {
-    message: MessageType;
+    message: MessageType
 }
 
 // нужно отобразить приходящие данные
@@ -23,7 +23,6 @@ const Message = (props: MessagePropsType) => {
                         {props.message.user.name} {/*создаёт студент*/}
                     </div>
                     <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
-
                         {props.message.message.text} {/*создаёт студент*/}
                     </pre>
                 </div>
