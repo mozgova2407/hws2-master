@@ -17,16 +17,16 @@ import s2 from '../../s1-main/App.module.css'
 * */
 
 // types
-export type AffairPriorityType = string // заменила any на string
+export type AffairPriorityType = string
 export type AffairType = {
-    _id: number // заменила any на number
-    name: string // заменила any на string
+    _id: number
+    name: string
     priority: AffairPriorityType
 }
 export type FilterType = 'all' | AffairPriorityType
 
 // constants
-const defaultAffairs: AffairType[] = [ // заменила any на AffairType[]
+const defaultAffairs: AffairType[] = [
     {_id: 1, name: 'React', priority: 'high'}, // студенты могут изменить содержимое name и количество элементов в массиве, ...priority не менять!
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
@@ -35,21 +35,21 @@ const defaultAffairs: AffairType[] = [ // заменила any на AffairType[]
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => { // need to fix any
+export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => {
 
-    if (filter === 'all') {
+    if (filter === 'all')
         return affairs
-    } else {
+    else
         return affairs.filter(a => a.priority === filter)
-    }
+
 }
-export const deleteAffair = (affairs:  AffairType[], _id: number): any => {
+export const deleteAffair = (affairs: AffairType[], _id: number): any => {
 
     return affairs.filter(a => a._id !== _id)
 }
 
 function HW2() {
-    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs) // need to fix any
+    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs)
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
