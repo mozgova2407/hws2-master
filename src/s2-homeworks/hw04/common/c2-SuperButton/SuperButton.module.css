@@ -22,6 +22,12 @@
     color: #fff;
 }
 
+.disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+}
+
 .default:hover {
     background-color: #e0e0e0;
 }
@@ -47,7 +53,5 @@
 }
 
 .button:disabled {
-    background-color: #bdc3c7;
-    color: #7f8c8d;
     cursor: not-allowed;
 }
